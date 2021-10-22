@@ -11,4 +11,4 @@ def get_companies():
   return json.dumps(companies)
 
 if __name__ == '__main__':
-    api.run()
+    api.run(host="0.0.0.0", debug=True)

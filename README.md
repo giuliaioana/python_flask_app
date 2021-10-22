@@ -15,7 +15,7 @@ pip install -r src/requirements.txt
 ### 2. Build docker image on local:
 
 ```
-sudo docker build . -t giuliaioana/python_flask_app:0.1
+sudo docker build . -t giuliaioana/python_flask_app:0.2
 ```
 
 ### 3. Run all on local:

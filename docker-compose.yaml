@@ -6,7 +6,7 @@
 version: "3.1"
 services:
   app:
-    image: giuliaioana/python_flask_app:0.1
+    image: giuliaioana/python_flask_app:0.2
     container_name: app
     # deploy:
     #   resources:
@@ -20,4 +20,4 @@ services:
     volumes:
       - ./src/app.py:/app.py:rw
     ports:
-      - "6969:5000"
+      - "5000:5000"
