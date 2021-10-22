@@ -1,0 +1,23 @@
+###########################
+######  SRE SANDBOX  ######
+######  PROMETHEUS   ######
+###########################
+
+version: "3.1"
+services:
+  app:
+    image: giuliaioana/python_flask_app:0.1
+    container_name: app
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '0.50'
+    #       memory: 50M
+    #     reservations:
+    #       cpus: '0.25'
+    #       memory: 20M
+    restart: always
+    volumes:
+      - ./src/app.py:/app.py:rw
+    ports:
+      - "6969:5000"
